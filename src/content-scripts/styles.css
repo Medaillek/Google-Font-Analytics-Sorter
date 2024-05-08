@@ -1,0 +1,67 @@
+li.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem !important;
+}
+
+button.sort-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    text-align: inherit;
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+button.sort-button {
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    transition: background-color 150ms ease;
+    border-radius: 3px;
+}
+
+button.sort-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+gf-stat-row {
+    opacity: 0;
+    animation: gf-appear 0.3s ease-in-out forwards;
+    animation-delay: var(--delay, 1000ms);
+}
+
+button:disabled {
+    cursor: wait;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+@keyframes gf-appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
