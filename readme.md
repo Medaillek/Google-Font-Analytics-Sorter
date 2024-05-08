@@ -1,31 +1,22 @@
-# Vite / Typescript / Tailwind - Chrome extension starter
+# Google Font Analytics Sorter
 
-## Introduction
+This is a Google Chrome extension that helps sort Google Font analytics data.
 
-This project is a React application built with TypeScript and managed with npm. It's structured to separate concerns, with different aspects of the application organized into their own directories.
+## Features
 
-## Directory Structure
+- Sorts Google Font analytics data in a user-friendly way.
+- Provides a button to sort data in ascending or descending order.
 
-- `components/`: Contains reusable UI components, such as buttons.
-- `lib/`: Contains utility functions and classes, including environment configuration and storage management.
-- `public/`: Contains static assets like icons.
-- `src/`: Contains the source code of the application. It's divided into several subdirectories:
-  - `assets/`: Contains additional static assets.
-  - `background/`: Contains scripts that run in the background of the application.
-  - `content-scripts/`: Contains scripts that modify the web pages loaded in the browser.
-  - `popup/`: Contains the code for the popup UI of the application.
-- `vite-env.d.ts`: Contains TypeScript definitions for Vite.
+## Installation
 
-## Setup
+1. Clone the repository to your local machine.
+2. Run `npm install` to install all the necessary dependencies.
+3. Run `npm run build` to build the project.
+4. Load the extension into Google Chrome using the `Load unpacked` option and selecting the `build` directory.
 
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Copy `.env.example` to `.env` and fill in the necessary environment variables.
-4. Run `npm start` to start the development server.
+## Usage
 
-## Building
-
-To build the project, run `npm run build`.
+Navigate to the Google Fonts analytics page. You will see a new button added to each column of the analytics table. Click this button to sort the data in that column.
 
 ## Contributing
 
@@ -33,4 +24,4 @@ Contributions are welcome. Please open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
